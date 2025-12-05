@@ -26,3 +26,24 @@ Ex HTTP, TCP , UDP , gRPC, FTP etc
 - Error managment
     - Retries
     - Timeouts and Error code
+
+## OSI Model
+OSI stands for Open systems interconnection model , but before we discuss the OSI model lets understand why we need the model in the first place.
+
+#### Why a communication model is required ?
+- Agnostic applications
+    - Without a standard model, the application must have knowledge of underlying medium, imagine you are publishing an app and it should work with all of wifi or fiber or LTE having different modes of communication will lead to chaos
+- Network equipment management
+    - It becomes easy to upgrade as all will follow the same communication model
+- Decoupled innovation
+    - Innovation can be done seperately at each level without affecting the other models.
+
+### Layers of OSI model
+There are 7 layers in OSI model and they are
+- Layer 7 => Application ( HTTP/FTP/gRPC)
+- Layer 6 => Presentation ( encoding, serialisation)
+- Layer 5 => Session ( connection establishment, TLS)
+- Layer 4 => Transport ( UDP / TCP)
+- Layer 3 => Network ( IP )
+- Layer 2 => Data link ( Frames, Mac address)
+- Layer 1 => Physical (electrical signal or waves)
